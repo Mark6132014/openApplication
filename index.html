@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Open a Application
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>
+        Open a application
+    </h2>
+    <hr>
+    <p>
+        Can't find your application? Type in a custom application protocol here:
+    </p>
+    <input class="appInput" placeholder="Type in a application protocol here..." value="ms-settings://">
+    <br>
+    <br>
+    <button class="start" onclick="location.assign(document.querySelector('.appInput').value);">
+        Run Application Protocol.
+    </button>
+    <p>
+        More may be coming out soon.
+    </p>
+    <hr>
+    <details>
+        <summary>
+            <span style="font-size: 1.5em;">
+                Windows Applications
+            </span>
+        </summary>
+        <p>
+            Click on a Windows Application Protocol here.
+        </p>
+        <div class="protocol" onclick="appProtocol('ms-settings://')">
+            <h2>
+                ms-settings://
+            </h2>
+            <p>
+                Opens settings
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('ms-clock://')">
+            <h2>
+                ms-clock://
+            </h2>
+            <p>
+                Opens clock
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('ms-photos://')">
+            <h2>
+                ms-photos://
+            </h2>
+            <p>
+                Opens photos
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('ms-calculator://')">
+            <h2>
+                ms-calculator://
+            </h2>
+            <p>
+                Opens calculator
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('ms-windows-store://')">
+            <h2>
+                ms-windows-store://
+            </h2>
+            <p>
+                Opens microsoft store
+            </p>
+        </div>
+    </details>
+    <details>
+        <summary>
+            <span style="font-size: 1.5em;">
+                Windows Applications at work
+            </span>
+        </summary>
+        <div class="protocol" onclick="appProtocol('ms-word://')">
+            <h2>
+                ms-word://
+            </h2>
+            <p>
+                Opens microsoft word
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('ms-outlook://')">
+            <h2>
+                ms-outlook://
+            </h2>
+            <p>
+                Opens outlook
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('ms-teams://')">
+            <h2>
+                ms-teams://
+            </h2>
+            <p>
+                Opens microsoft teams
+            </p>
+        </div>
+    </details>
+    <details>
+        <summary>
+            <span style="font-size: 1.5em;">
+                Games
+            </span>
+        </summary>
+        <p>
+            Click on a Game Application Protocol here.
+        </p>
+        <div class="protocol" onclick="appProtocol('roblox://')">
+            <h2>
+                roblox://
+            </h2>
+            <p>
+                Opens roblox
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('roblox-studio://')">
+            <h2>
+                roblox-studio://
+            </h2>
+            <p>
+                Opens roblox studio.
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('steam://')">
+            <h2>
+                steam://
+            </h2>
+            <p>
+                Opens steam
+            </p>
+        </div>
+        <br>
+        <div class="protocol" onclick="appProtocol('minecraft://')">
+            <h2>
+                minecraft://
+            </h2>
+            <p>
+                Opens minecraft
+            </p>
+        </div>
+    </details>
+    <script>
+        function appProtocol(protocol) {
+            location.assign(protocol);
+        }
+    </script>
+</body>
+</html>
